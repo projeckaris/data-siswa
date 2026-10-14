@@ -176,8 +176,7 @@ tampilkanPesan("Memuat data siswa...");
 // SELECT nis, nama, ... FROM siswa ORDER BY nama
 const { data, error } = await db
 .from("siswa")
-.select("nis, nama, kelas, jenis_kelamin, tanggal_lahir, alamat,
-foto_url")
+.select("nis, nama, kelas, jenis_kelamin, tanggal_lahir, alamat, foto_url")
 .order("nama");
 if (error) {
 console.error(error);
